@@ -2,11 +2,8 @@ version: "3.7"
 
 services:
   backend:
-    build:
-      context: .
-      dockerfile: docker/nodejs.Dockerfile
-#    image: browserless/chrome:latest
-#    platform: linux/amd64
+    image: browserless/chrome:latest
+    platform: linux/amd64
     ports:
       - 80:80
     volumes:

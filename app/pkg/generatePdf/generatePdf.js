@@ -18,17 +18,21 @@ export const generatePdf = async (file, options) => {
     });
     const page = await browser.newPage();
 
-    if (file.content) {
-        let data = await inlineCss(file.content, {url: "/"});
-        console.log("Compiling the template with handlebars")
-        const template = hb.compile(data, {strict: true});
-        await page.setContent(template(data), {
-            waitUntil: 'networkidle0'
-        });
-    } else {
-        await page.goto(file.url, {
-            waitUntil: ['load', 'networkidle0']
-        });
+    try {
+        if (file.content) {
+            let data = await inlineCss(file.content, {url: "/"});
+            console.log("Compiling the template with handlebars")
+            const template = hb.compile(data, {strict: true});
+            await page.setContent(template(data), {
+                waitUntil: 'networkidle0'
+            });
+        } else {
+            await page.goto(file.url, {
+                waitUntil: ['load', 'networkidle0']
+            });
+        }
+    } catch (e) {
+        console.error(e.message)
     }
 
     return page.pdf(options)
