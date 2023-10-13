@@ -132,3 +132,5 @@ dist
 
 #mac folder
 .idea
+
+.DS_Store
