@@ -1,0 +1,1733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>УИК / База адресов</title>
+    </head>
+<body>
+<ymaps class="ymaps-2-1-79-map" style="width: 1567px; height: 1000px;">
+    <ymaps class="ymaps-2-1-79-map ymaps-2-1-79-i-ua_js_yes ymaps-2-1-79-map-bg ymaps-2-1-79-islets_map-lang-ru"
+           style="width: 1567px; height: 1000px; z-index: 0;">
+        <ymaps class="ymaps-2-1-79-inner-panes">
+            <ymaps class="ymaps-2-1-79-events-pane ymaps-2-1-79-user-selection-none" unselectable="on"
+                   style="height: 100%; width: 100%; top: 0px; left: 0px; position: absolute; z-index: 3500; cursor: url(&quot;https://api-maps.yandex.ru/2.1.79/build/release/images/cursor/grab.cur&quot;) 16 16, url(&quot;https://api-maps.yandex.ru/2.1.79/build/release/images/cursor/grab.cur&quot;), move;"></ymaps>
+            <ymaps class="ymaps-2-1-79-ground-pane"
+                   style="top: 0px; left: 0px; position: absolute; transform: translate3d(0px, 0px, 0px) scale(1, 1); z-index: 701;">
+                <ymaps style="z-index: 150; position: absolute;">
+                    <canvas height="1256" width="1823"
+                            style="position: absolute; width: 1823px; height: 1256px; left: -128px; top: -128px;"></canvas>
+                </ymaps>
+            </ymaps>
+            <ymaps class="ymaps-2-1-79-copyrights-pane"
+                   style="height: 0px; inset: auto 0px 0px; position: absolute; z-index: 7002;">
+                <ymaps class="ymaps-2-1-79-map-copyrights-promo">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-gotoymaps" title="Открыть в Яндекс.Картах">
+                            <ymaps class="ymaps-2-1-79-gotoymaps__container">
+                                <ymaps class="ymaps-2-1-79-gotoymaps__pin"></ymaps>
+                                <ymaps class="ymaps-2-1-79-gotoymaps__text-container">
+                                    <ymaps class="ymaps-2-1-79-gotoymaps__text">Открыть в Яндекс.Картах</ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                        <ymaps class="ymaps-2-1-79-gototaxi" title="Доехать на такси" style="display: none;">
+                            <ymaps class="ymaps-2-1-79-gototaxi__container">
+                                <ymaps class="ymaps-2-1-79-gototaxi__pin"></ymaps>
+                                <ymaps class="ymaps-2-1-79-gototaxi__text-container" style="">
+                                    <ymaps class="ymaps-2-1-79-gototaxi__text">Доехать на такси</ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                        <a class="ymaps-2-1-79-gototech" target="_blank"
+                           href="https://tech.yandex.ru/maps/mapsapi/?from=api-maps " style="">Создать свою карту</a>
+                    </ymaps>
+                </ymaps>
+                <ymaps>
+                    <ymaps class="ymaps-2-1-79-copyright ymaps-2-1-79-copyright_logo_no" style="">
+                        <ymaps class="ymaps-2-1-79-copyright__fog">…</ymaps>
+                        <ymaps class="ymaps-2-1-79-copyright__wrap">
+                            <ymaps class="ymaps-2-1-79-copyright__layout">
+                                <ymaps class="ymaps-2-1-79-copyright__content-cell">
+                                    <ymaps class="ymaps-2-1-79-copyright__content">
+                                        <ymaps class="ymaps-2-1-79-copyright__text">© Яндекс</ymaps>
+                                        <ymaps class="ymaps-2-1-79-copyright__agreement">&nbsp;<a
+                                                class="ymaps-2-1-79-copyright__link" target="_blank"
+                                                href="https://yandex.ru/legal/maps_termsofuse/?lang=ru" rel="noopener">Условия
+                                            использования</a></ymaps>
+                                    </ymaps>
+                                </ymaps>
+                                <ymaps class="ymaps-2-1-79-copyright__logo-cell"><a class="ymaps-2-1-79-copyright__logo"
+                                                                                    href="" target="_blank"></a></ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+            </ymaps>
+            <ymaps class="ymaps-2-1-79-controls-pane"
+                   style="width: 100%; top: 0px; left: 0px; position: absolute; z-index: 6303;">
+                <ymaps class="ymaps-2-1-79-controls__toolbar" style="margin-top: 10px;">
+                    <ymaps class="ymaps-2-1-79-controls__toolbar_left"></ymaps>
+                    <ymaps class="ymaps-2-1-79-controls__toolbar_right">
+                        <ymaps class="ymaps-2-1-79-controls__control_toolbar ymaps-2-1-79-user-selection-none"
+                               unselectable="on" style="margin-right: 10px; margin-left: 0px; position: inherit;">
+                            <ymaps>
+                                <ymaps class="ymaps-2-1-79-float-button ymaps-2-1-79-_hidden-text"
+                                       style="max-width: 28px" title="">
+                                    <ymaps class="ymaps-2-1-79-float-button-icon ymaps-2-1-79-float-button-icon_icon_expand"></ymaps>
+                                    <ymaps class="ymaps-2-1-79-float-button-text"></ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-controls__bottom" style="top: 1000px;"></ymaps>
+                <ymaps class="ymaps-2-1-79-controls__control"
+                       style="margin-right: 0px; margin-left: 0px; position: inherit; inset: 108px auto auto 10px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-zoom" style="height: 150px">
+                            <ymaps class="ymaps-2-1-79-zoom__plus ymaps-2-1-79-zoom__button ymaps-2-1-79-float-button ymaps-2-1-79-user-selection-none"
+                                   unselectable="on">
+                                <ymaps class="ymaps-2-1-79-zoom__icon ymaps-2-1-79-float-button-icon"></ymaps>
+                            </ymaps>
+                            <ymaps class="ymaps-2-1-79-zoom__minus ymaps-2-1-79-zoom__button ymaps-2-1-79-float-button ymaps-2-1-79-user-selection-none"
+                                   unselectable="on">
+                                <ymaps class="ymaps-2-1-79-zoom__icon ymaps-2-1-79-float-button-icon"></ymaps>
+                            </ymaps>
+                            <ymaps class="ymaps-2-1-79-zoom__scale">
+                                <ymaps class="ymaps-2-1-79-zoom__runner ymaps-2-1-79-zoom__button ymaps-2-1-79-float-button ymaps-2-1-79-zoom__runner__transition ymaps-2-1-79-touch-action-none ymaps-2-1-79-user-selection-none"
+                                       unselectable="on" style="top: 65px;">
+                                    <ymaps class="ymaps-2-1-79-zoom__icon ymaps-2-1-79-float-button-icon ymaps-2-1-79-float-button-icon_icon_runner"></ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+            </ymaps>
+            <ymaps class="ymaps-2-1-79-places-pane"
+                   style="top: 0px; left: 0px; position: absolute; transform: translate3d(0px, 0px, 0px) scale(1, 1); z-index: 2804;">
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 941px; top: 510px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732310" class="" style="">
+                                        <ymaps>10</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 916px; top: 535px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732312" class="" style="">
+                                        <ymaps>11</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 964px; top: 567px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732314" class="" style="">
+                                        <ymaps>12</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 946px; top: 592px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732316" class="" style="">
+                                        <ymaps>13</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 915px; top: 574px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732318" class="" style="">
+                                        <ymaps>14</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 939px; top: 366px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue ymaps-2-1-79-placemark_type_blank"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732320" class="" style="">
+                                        <ymaps>8</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 944px; top: 470px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue ymaps-2-1-79-placemark_type_blank"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732322" class="" style="">
+                                        <ymaps>9</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 970px; top: 485px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732324" class="" style="">
+                                        <ymaps>УИК 2201</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 974px; top: 490px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732326" class="" style="">
+                                        <ymaps>УИК 2202</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 976px; top: 499px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732328" class="" style="">
+                                        <ymaps>УИК 2203</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 974px; top: 509px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732330" class="" style="">
+                                        <ymaps>УИК 2204</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 972px; top: 502px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732332" class="" style="">
+                                        <ymaps>УИК 2205</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 966px; top: 485px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732334" class="" style="">
+                                        <ymaps>УИК 2206</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 966px; top: 509px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732336" class="" style="">
+                                        <ymaps>УИК 2207</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 965px; top: 504px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732338" class="" style="">
+                                        <ymaps>УИК 2208</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 963px; top: 495px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732340" class="" style="">
+                                        <ymaps>УИК 2209</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 943px; top: 496px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732342" class="" style="">
+                                        <ymaps>УИК 2210</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 949px; top: 504px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732344" class="" style="">
+                                        <ymaps>УИК 2211</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 891px; top: 405px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732346" class="" style="">
+                                        <ymaps>УИК 2212</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 929px; top: 422px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732348" class="" style="">
+                                        <ymaps>УИК 2213</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 802px; top: 366px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732350" class="" style="">
+                                        <ymaps>УИК 2214</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 1024px; top: 374px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732352" class="" style="">
+                                        <ymaps>УИК 2215</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 999px; top: 427px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732354" class="" style="">
+                                        <ymaps>УИК 2216</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 969px; top: 449px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732356" class="" style="">
+                                        <ymaps>УИК 2217</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 953px; top: 482px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732358" class="" style="">
+                                        <ymaps>УИК 2218</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 927px; top: 468px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732360" class="" style="">
+                                        <ymaps>УИК 2219</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 944px; top: 468px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732362" class="" style="">
+                                        <ymaps>УИК 2220</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 931px; top: 499px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732364" class="" style="">
+                                        <ymaps>УИК 2221</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 919px; top: 490px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732366" class="" style="">
+                                        <ymaps>УИК 2222</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 932px; top: 511px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732368" class="" style="">
+                                        <ymaps>УИК 2223</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 940px; top: 526px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732370" class="" style="">
+                                        <ymaps>УИК 2224</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 949px; top: 521px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732372" class="" style="">
+                                        <ymaps>УИК 2225</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 928px; top: 516px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732374" class="" style="">
+                                        <ymaps>УИК 2226</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 935px; top: 516px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732376" class="" style="">
+                                        <ymaps>УИК 2227</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 923px; top: 517px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732378" class="" style="">
+                                        <ymaps>УИК 2228</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 925px; top: 526px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732380" class="" style="">
+                                        <ymaps>УИК 2229</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 932px; top: 523px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732382" class="" style="">
+                                        <ymaps>УИК 2230</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 920px; top: 523px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732384" class="" style="">
+                                        <ymaps>УИК 2231</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 915px; top: 526px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732386" class="" style="">
+                                        <ymaps>УИК 2232</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 941px; top: 533px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732388" class="" style="">
+                                        <ymaps>УИК 2233</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 898px; top: 526px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732390" class="" style="">
+                                        <ymaps>УИК 2234</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 883px; top: 531px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732392" class="" style="">
+                                        <ymaps>УИК 2235</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 893px; top: 543px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732394" class="" style="">
+                                        <ymaps>УИК 2236</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 906px; top: 545px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732396" class="" style="">
+                                        <ymaps>УИК 2237</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 917px; top: 543px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732398" class="" style="">
+                                        <ymaps>УИК 2238</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 975px; top: 584px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732400" class="" style="">
+                                        <ymaps>УИК 2239</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 949px; top: 573px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732402" class="" style="">
+                                        <ymaps>УИК 2240</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 957px; top: 581px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732404" class="" style="">
+                                        <ymaps>УИК 2241</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 970px; top: 581px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732406" class="" style="">
+                                        <ymaps>УИК 2242</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 976px; top: 574px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732408" class="" style="">
+                                        <ymaps>УИК 2243</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 958px; top: 579px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732410" class="" style="">
+                                        <ymaps>УИК 2244</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 955px; top: 572px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732412" class="" style="">
+                                        <ymaps>УИК 2245</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 949px; top: 567px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732414" class="" style="">
+                                        <ymaps>УИК 2246</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 966px; top: 572px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732416" class="" style="">
+                                        <ymaps>УИК 2247</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 932px; top: 557px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732418" class="" style="">
+                                        <ymaps>УИК 2248</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 937px; top: 564px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732420" class="" style="">
+                                        <ymaps>УИК 2249</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 948px; top: 581px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732422" class="" style="">
+                                        <ymaps>УИК 2250</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 953px; top: 588px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732424" class="" style="">
+                                        <ymaps>УИК 2251</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 938px; top: 586px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732426" class="" style="">
+                                        <ymaps>УИК 2252</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 948px; top: 591px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732428" class="" style="">
+                                        <ymaps>УИК 2253</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 942px; top: 596px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732430" class="" style="">
+                                        <ymaps>УИК 2254</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 937px; top: 598px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732432" class="" style="">
+                                        <ymaps>УИК 2255</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 938px; top: 596px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732434" class="" style="">
+                                        <ymaps>УИК 2256</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 933px; top: 598px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732436" class="" style="">
+                                        <ymaps>УИК 2257</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 936px; top: 605px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732438" class="" style="">
+                                        <ymaps>УИК 2258</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 924px; top: 591px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732440" class="" style="">
+                                        <ymaps>УИК 2259</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 921px; top: 596px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732442" class="" style="">
+                                        <ymaps>УИК 2260</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 927px; top: 600px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732444" class="" style="">
+                                        <ymaps>УИК 2261</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 929px; top: 613px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732446" class="" style="">
+                                        <ymaps>УИК 2262</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 925px; top: 608px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732448" class="" style="">
+                                        <ymaps>УИК 2263</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 915px; top: 603px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732450" class="" style="">
+                                        <ymaps>УИК 2264</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 920px; top: 600px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732452" class="" style="">
+                                        <ymaps>УИК 2265</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 919px; top: 586px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732454" class="" style="">
+                                        <ymaps>УИК 2266</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 929px; top: 579px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732456" class="" style="">
+                                        <ymaps>УИК 2267</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 936px; top: 572px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732458" class="" style="">
+                                        <ymaps>УИК 2268</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 928px; top: 569px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732460" class="" style="">
+                                        <ymaps>УИК 2269</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 908px; top: 581px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732462" class="" style="">
+                                        <ymaps>УИК 2270</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 912px; top: 567px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732464" class="" style="">
+                                        <ymaps>УИК 2271</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 924px; top: 562px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732466" class="" style="">
+                                        <ymaps>УИК 2272</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 902px; top: 567px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732468" class="" style="">
+                                        <ymaps>УИК 2273</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 895px; top: 559px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732470" class="" style="">
+                                        <ymaps>УИК 2274</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 942px; top: 511px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732472" class="" style="">
+                                        <ymaps>УИК 2275</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 939px; top: 521px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732474" class="" style="">
+                                        <ymaps>УИК 2276</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 935px; top: 535px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732476" class="" style="">
+                                        <ymaps>УИК 2277</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 993px; top: 451px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732478" class="" style="">
+                                        <ymaps>УИК 2278</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 981px; top: 431px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732480" class="" style="">
+                                        <ymaps>УИК 2279</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 873px; top: 412px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732482" class="" style="">
+                                        <ymaps>УИК 2280</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 916px; top: 412px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732484" class="" style="">
+                                        <ymaps>УИК 2281</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 982px; top: 396px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732486" class="" style="">
+                                        <ymaps>УИК 2282</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 982px; top: 567px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732488" class="" style="">
+                                        <ymaps>УИК 2283</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 984px; top: 522px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732490" class="" style="">
+                                        <ymaps>УИК 2284</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 986px; top: 541px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-placemark ymaps-2-1-79-placemark_state_active ymaps-2-1-79-placemark_theme_blue"
+                               style="opacity: 1;">
+                            <ymaps class="ymaps-2-1-79-placemark__l ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__r ymaps-2-1-79-placemark_theme_blue"></ymaps>
+                            <ymaps class="ymaps-2-1-79-placemark__content">
+                                <ymaps class="ymaps-2-1-79-placemark__content-inner">
+                                    <ymaps id="id_169683219470227732492" class="" style="">
+                                        <ymaps>УИК 2285</ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+                <ymaps class="ymaps-2-1-79-placemark-overlay ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 650; height: 0px; width: 0px; position: absolute; left: 1859px; top: 1861px;">
+                    <ymaps>
+                        <ymaps class="ymaps-2-1-79-islets_icon-with-caption">
+                            <ymaps class="ymaps-2-1-79-islets_icon-with-caption__caption-block">
+                                <ymaps class="ymaps-2-1-79-islets_icon-caption" style="max-width: 188px;">Тюменская
+                                    область,Ялуторовский район
+                                </ymaps>
+                            </ymaps>
+                            <ymaps id="id_169683219470227732901">
+                                <ymaps class="ymaps-2-1-79-svg-icon ymaps_https___api_maps_yandex_ru_2_1_79_643447321309islands_icon___1E98FF_34x41_1696832304257"
+                                       style="position: absolute; width: 34px; height: 41px; left: -11px; top: -38px;">
+                                    <ymaps class="ymaps-2-1-79-svg-icon-content"
+                                           style="font: 13px Arial, sans-serif; position: absolute; text-align: center;left: 5px;top: 6px;width: 16px;height: 16px;">
+                                        <ymaps></ymaps>
+                                    </ymaps>
+                                </ymaps>
+                            </ymaps>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+            </ymaps>
+            <ymaps class="ymaps-2-1-79-balloon-pane"
+                   style="top: 0px; left: 0px; position: absolute; transform: translate3d(0px, 0px, 0px) scale(1, 1); z-index: 4905;"></ymaps>
+            <ymaps class="ymaps-2-1-79-areas-pane"
+                   style="top: 0px; left: 0px; position: absolute; transform: translate3d(0px, 0px, 0px) scale(1, 1); z-index: 1406;">
+                <ymaps class="ymaps-2-1-79-node-pane ymaps-2-1-79-user-selection-none" unselectable="on"
+                       style="z-index: 0; top: 0px; left: 0px; position: absolute;">
+                    <ymaps class="ymaps-2-1-79-graphics-canvas"
+                           style="top: 0px; left: 0px; transform: translateZ(0px); position: absolute; z-index: 650;">
+                        <ymaps>
+                            <canvas width="256" height="256"
+                                    style="position: absolute; width: 256px; height: 256px; left: 610px; top: -51px;"></canvas>
+                            <canvas width="256" height="256"
+                                    style="position: absolute; width: 256px; height: 256px; left: 610px; top: 205px;"></canvas>
+                            <canvas width="256" height="256"
+                                    style="position: absolute; width: 256px; height: 256px; left: 610px; top: 461px;"></canvas>
+                            <canvas width="256" height="256"
+                                    style="position: absolute; width: 256px; height: 256px; left: 866px; top: -51px;"></canvas>
+                            <canvas width="256" height="256"
+                                    style="position: absolute; width: 256px; height: 256px; left: 866px; top: 205px;"></canvas>
+                            <canvas width="253" height="170"
+                                    style="position: absolute; width: 253px; height: 170px; left: 866px; top: 461px;"></canvas>
+                            <canvas width="256" height="256"
+                                    style="position: absolute; width: 256px; height: 256px; left: 354px; top: -51px;"></canvas>
+                            <canvas width="256" height="256"
+                                    style="position: absolute; width: 256px; height: 256px; left: 354px; top: 205px;"></canvas>
+                            <canvas width="256" height="256"
+                                    style="position: absolute; width: 256px; height: 256px; left: 354px; top: 461px;"></canvas>
+                        </ymaps>
+                    </ymaps>
+                </ymaps>
+            </ymaps>
+        </ymaps>
+    </ymaps>
+</ymaps>
+</body>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=60553566-4e66-4dff-bb7d-5dd22603229b"
+        type="text/javascript"></script>
+</html>
